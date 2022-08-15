@@ -1,8 +1,8 @@
 .cabecalho {
     align-items: center;
-    border-bottom: 1px solid #103D4A;
+    color: var(--branco);
+    border-bottom: 1px solid var(--borda-cabecalho-mobile);
     box-sizing: border-box;
-    color: #FFF;
     display: flex;
     flex-direction: column;
     padding-bottom: .75rem;
@@ -22,7 +22,15 @@
 .cabecalho__link {
     display: inline-block;
     font-size: 1.1rem;
-    margin-right: .7rem;
     margin-bottom: 1.25rem;
     margin-left: .7rem;
+    margin-right: .7rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        border: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
